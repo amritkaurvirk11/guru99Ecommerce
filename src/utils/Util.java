@@ -12,24 +12,23 @@ public class Util extends Browsers{
 	public static final String ChromeDriveLocation= System.getProperty("user.dir")+"\\driver\\chromedriver.exe";
 	public static final int driverWaitTime = 20;	
 	public static final String baseUrl= "http://live.demoguru99.com/index.php/";
-	
 	public static final	String mobileLinkPath = "//*[contains(text(),'Mobile')]";
 	public static final String ExpecedHomePageTitle = "Home page";
 	public static final String ExpecedMobilePageTitle="Mobile";
 	public static final String SortByDropDownPath = "//select[@title='Sort By']";
 	public static final String SortByVisibleText ="Name";
-	
-//	public static final String passwordPath = "//input[@name = 'password']";
-//	public static final String loginButtonPath = "//input[@name='btnLogin']";
-//	public static final String usernameInput ="mngr247775";
-//	public static final String passwordInput = "pYhYjYg";
-//	public static final String expectedError = "User or Password is not valid";
-//	public static final String ExcelLocation = System.getProperty("user.dir")+"\\excels\\TestData.xlsx";
-//	public static final String SheetName = "Login";
-//	public static final String pageTextTagName = "tbody";
-//	public static final String pattern = ":";
-//	public static final String firstPattern = "mngr";
-//	public static final String secondPattern= "[0-9]+";
+	public static final String SonyXperiaPricePath ="//*[@id=\"product-price-1\"]/span";
+	public static final String SonyXperiaNamePath = "//a[text()='Sony Xperia']";
+	public static final String SonyXperiaDeatilPageTitle  ="Sony Xperia";
+	public static final String addToCartButtonPath = "//button[@title='Add to Cart']";
+	public static final int SonyXperiaAddToCartButtonIndex = 0;
+	public static final String QuantityButtonPath = "//input[@title='Qty']";
+	public static final String Quantity= "10000";
+	public static final String QuantityUpdateButtonPath= "//*[@id=\"shopping-cart-table\"]/tbody/tr/td[4]/button";
+	public static final String ErrorMessagePath ="//p[@class='item-msg error']";
+	public static final String ExpectedErrorMessage ="*The maximum quantity allowed for purchase is 500.";
+	public static final String EmptyCartLinkPath  ="//*[@id=\"empty_cart_button\"]";
+	public static final String HeaderMiniCartPath = " //div[@class ='header-minicart']//span[3]";
 	
 	public static boolean verifySortByName(){
 		//create an LinkedList instead of array-list because it preserves insertion order
